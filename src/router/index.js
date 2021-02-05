@@ -17,7 +17,12 @@ const routes = [
     path: "/event/create",
     name: "event-create",
     component: () => import("../views/EventCreate.vue")
+    // alias: "/event/create"  Alias path
   }
+  // {
+  //   path: "/events",
+  //   redirect: { name: "event-list" } // Redirect to a path
+  // }
 ];
 
 const router = createRouter({
